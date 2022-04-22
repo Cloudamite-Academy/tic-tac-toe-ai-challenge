@@ -4,7 +4,7 @@ import { useGameContext } from './GameContext';
 
 const GameBoard: React.FunctionComponent = () => {
 
-  const {board,turn, nextMove, gameOver, resetGame} = useGameContext();
+  const {board,turn, nextMove, resetGame} = useGameContext();
   let gameStarted: boolean = false; 
   if (!board || !nextMove || !resetGame) return null;
  

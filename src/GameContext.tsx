@@ -83,7 +83,7 @@ export const GameContextProvider: React.FunctionComponent<GameContextProps> = ({
             setGameOver(true);
           });
         }
-    },[board,round,turn]);
+    },[board,round,turn,playerName]);
 
     React.useEffect(() => {
       if(turn === P1 && !gameOver){
@@ -98,7 +98,7 @@ export const GameContextProvider: React.FunctionComponent<GameContextProps> = ({
         const move : gameMove = getNextMove(board,round);
         nextMove(move.row,move.col,P2);
       }
-    }, [turn,gameOver,board,nextMove]);
+    }, [turn,gameOver,board,nextMove,playerName,round]);
 
     const resetGame = () => {
       setBoard(grid);
