@@ -43,7 +43,7 @@ export const PLAYER_NAME = "";
 Then you need to implement the getNextMove function
 ```typescript
 export function getNextMove(board: string[][], round: number): gameMove {
-	const possibleMove: gameMove[] = getPossibleMoves(board);
+	const possibleMoves: gameMove[] = getPossibleMoves(board);
 	return possibleMove[0];
 }
 ```
