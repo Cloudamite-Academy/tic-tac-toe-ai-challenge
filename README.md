@@ -11,7 +11,7 @@ Install [npm](https://docs.npmjs.com/) and then you can install yarn with npm:
 npm install --global yarn
 ```
 
-### Building and running the applicaiton
+### 🚀 Building and running the applicaiton
 install the dependencies with
 ```bash
 yarn install
@@ -22,11 +22,11 @@ and then run
 yarn start
 ```
 
-# The Challenge
+# ✨ The Challenge
 You are O (P2) and the challenge is to write an AI that can play a tie in tic-tac-toe
 Start with ai.tsx
 
-### The board
+### 🌱 The board
 the intial state of the board is filled with number from 1 to 9
 ```typescript
 1 2 3  
@@ -48,7 +48,7 @@ export function getNextMove(board: string[][], round: number): gameMove {
 }
 ```
 
-### Help?
+### 💦 Help?
 See helpper functions in 
 GameUtil.tsx
 
