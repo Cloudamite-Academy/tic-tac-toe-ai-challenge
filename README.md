@@ -1,4 +1,4 @@
-# tic-tac-toe-ai-challenge
+# Tic-Tac-Toe-AI-Challenge
 Can you create an AI for classic Tic-Tac-Toe?
 
 # 🏃 Getting started 
@@ -23,4 +23,42 @@ yarn start
 ```
 
 # The Challenge
-The challenge is to write an AI that can play a tie in tic-tac-toe
+You are O (P2) and the challenge is to write an AI that can play a tie in tic-tac-toe
+Start with ai.tsx
+
+### The board
+the intial state of the board is filled with number from 1 to 9
+```typescript
+1 2 3  
+4 5 6  
+7 8 9  
+```
+
+
+First you need to name your bot by editing the line
+```typescript
+export const PLAYER_NAME = "";
+```
+
+Then you need to implement the getNextMove function
+```typescript
+export function getNextMove(board: string[][], round: number): gameMove {
+	const possibleMove: gameMove[] = getPossibleMoves(board);
+	return possibleMove[0];
+}
+```
+
+### Help?
+See helpper functions in 
+GameUtil.tsx
+
+#### getPossibleMoves
+Gets all the possible moves on the board
+
+#### isWinning
+returns true, if player is winning
+
+#### isSpotOpen
+returns true if spot is open
+
+isMovesLeft
