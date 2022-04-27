@@ -15,7 +15,7 @@ const PlayerName: React.FunctionComponent = () => {
            <div className='pname'>
                {showError? (
                 <p>Set Player name to start the game:<br></br>
-                Player name must be between 4 and 30 characters</p>):(<p></p>)}
+                Player name must be between 3 and 30 characters</p>):(<p></p>)}
            </div>
         </div>
   );
